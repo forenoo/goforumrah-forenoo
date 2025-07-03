@@ -1,0 +1,35 @@
+@use '../abstracts/variables' as *;
+
+.navigation {
+  background-color: $color-navi-1;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 23px 72px;
+
+  &__logo {
+    width: auto;
+    height: 26px;
+  }
+
+  &__menu {
+    display: flex;
+    align-items: center;
+
+    &-item {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+
+      &:not(:last-child) {
+        padding: 0 24px;
+        border-right: 1px solid $color-navi-3;
+      }
+
+      &:is(:last-child) {
+        padding-left: 24px;
+        gap: 24px;
+      }
+    }
+  }
+}

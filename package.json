@@ -1,0 +1,20 @@
+{
+  "name": "goforumrah",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "sass --watch sass/main.scss:css/style.css",
+    "concat:css": "concat -o css/style.css css/style.css css/general-sans.css",
+    "compile:sass": "sass sass/main.scss css/style.css && npm run concat:css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "sass": "^1.89.2"
+  },
+  "dependencies": {
+    "concat": "^1.0.3"
+  }
+}

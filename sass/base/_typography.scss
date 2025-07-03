@@ -1,0 +1,101 @@
+@use '../abstracts/variables' as *;
+
+body {
+  font-family: $font-family;
+  font-weight: 400;
+  font-style: normal;
+  color: $color-white;
+}
+
+.heading {
+  font-weight: 600;
+  line-height: 120%;
+
+  &-1 {
+    font-size: 52px;
+  }
+
+  &-2 {
+    font-size: 44px;
+  }
+
+  &-3 {
+    font-size: 36px;
+  }
+
+  &-4 {
+    font-size: 28px;
+  }
+
+  &-5 {
+    font-size: 22px;
+  }
+}
+
+.xl {
+  font-size: 18px;
+  line-height: 140%;
+
+  &--bold {
+    font-weight: 600;
+  }
+
+  &--medium {
+    font-weight: 500;
+  }
+
+  &--regular {
+    font-weight: 400;
+  }
+}
+
+.lg {
+  font-size: 16px;
+  line-height: 140%;
+
+  &--bold {
+    font-weight: 600;
+  }
+
+  &--medium {
+    font-weight: 500;
+  }
+
+  &--regular {
+    font-weight: 400;
+  }
+}
+
+.base {
+  font-size: 14px;
+  line-height: 150%;
+
+  &--bold {
+    font-weight: 600;
+  }
+
+  &--medium {
+    font-weight: 500;
+  }
+
+  &--regular {
+    font-weight: 400;
+  }
+}
+
+.sm {
+  font-size: 12px;
+  line-height: 150%;
+
+  &--bold {
+    font-weight: 600;
+  }
+
+  &--medium {
+    font-weight: 500;
+  }
+
+  &--regular {
+    font-weight: 400;
+  }
+}

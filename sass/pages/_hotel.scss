@@ -1,0 +1,139 @@
+@use '../abstracts/variables' as *;
+
+.hotel-header {
+  background-image: linear-gradient(#052c4700, #052c4799),
+    url("../assets/img/modern-hotel-buildings-sea-shore-with-palm-trees-green-lawn\ 1.png");
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  height: 420px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  &__tabs {
+    border-radius: 1000px;
+    background-color: $color-white;
+    position: absolute;
+    top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    padding: 8px;
+
+    &-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 1000px;
+      padding: 12px 32px;
+      gap: 12px;
+      color: $color-primary;
+      transition: all 0.3s ease;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $color-navi-1;
+        color: $color-white;
+      }
+
+      &-icon {
+        width: 24px;
+        height: 24px;
+        transition: all 0.3s ease;
+      }
+
+      &--active {
+        background-color: $color-navi-1;
+        color: $color-white;
+      }
+
+      &-link,
+      &-link:visited {
+        color: inherit;
+        text-decoration: none;
+        width: fit-content;
+      }
+
+      &:hover &-icon {
+        filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7495%) hue-rotate(288deg) brightness(100%) contrast(100%);
+      }
+
+      &--active &-icon {
+        filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7495%) hue-rotate(288deg) brightness(100%) contrast(100%);
+      }
+    }
+  }
+
+  &__content {
+    margin-top: 80px;
+    text-align: center;
+
+    &>p {
+      margin-top: 16px;
+    }
+  }
+
+  &__search {
+    border-radius: 1000px;
+    color: $color-subtle;
+    position: absolute;
+    bottom: -40px;
+    width: 100%;
+    max-width: 1200px;
+    padding: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $color-white;
+    box-shadow: 0 12px 44px rgba($color-navi-1, 0.05);
+    border: 1px solid $color-input;
+
+    &-container {
+      display: flex;
+      align-items: center;
+      flex: 1;
+      margin-right: 16px;
+      gap: 16px;
+    }
+
+    &-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 12px 20px;
+
+      &--full {
+        flex: 2;
+      }
+
+      &-input {
+        border: none;
+        outline: none;
+        background-color: transparent;
+        color: $color-subtle;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.5;
+        width: 100%;
+
+        &::placeholder {
+          color: $color-subtle;
+        }
+      }
+
+      &-wrapper {
+        display: flex;
+        align-items: center;
+      }
+
+      &-icon {
+        width: 24px;
+        height: 24px;
+        fill: $color-subtle;
+      }
+    }
+  }
+}
